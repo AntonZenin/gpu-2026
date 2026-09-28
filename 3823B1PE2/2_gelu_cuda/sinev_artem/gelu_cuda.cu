@@ -42,17 +42,7 @@ std::vector<float> GeluCUDA(const std::vector<float>& input) {
 
     cudaFree(d_in);
     cudaFree(d_out);
-    
-    // cudaDeviceSynchronize();
 
-    
-    // std::cout<< output[0]<<std::endl;
-    // memcpy(output.data(), host_buffer, len * sizeof(float));
-    // cudaMemcpy(output.data(), host_buffer, len * sizeof(float), cudaMemcpyDeviceToHost);
-
-    // cudaFreeHost(host_buffer);
-    // cudaFree(in);
-    // cudaFree(out);
 
     return output;
 } 
